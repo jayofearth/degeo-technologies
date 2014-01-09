@@ -1,0 +1,20 @@
+<!--
+	This is an example of how to output the HTML_Resources queue
+	It is assumed that:
+		$this->HTML_Resources = new HTML_resources;
+-->
+<!DOCTYPE html>
+<html>
+<head>
+	<title>HTML Resources Library Example</title>
+	
+	<? $this->HTML_Resources->get_stylesheets() ?>
+	<? $this->HTML_Resources->get_header_scripts() ?>
+</head>
+<body>
+	
+	<!-- Some content -->
+	
+	<? $this->HTML_Resources->get_footer_scripts() ?>
+</body>
+</html>
